@@ -59,27 +59,62 @@
     <a href="https://kskdheksnd.github.io/Hall-of-Fame/">HALL OF FAME</a>
   </nav>
 
-  <section style="
+<section style="
   background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
   padding: 100px 50px;
   max-width: 1000px;
   margin: auto;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  overflow: hidden;
 ">
-  <h2 style="color: #e63946; font-size: 2.8em; margin-bottom: 0.5em; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
+  <h2 class="fade-in" style="
+    color: #e63946;
+    font-size: 2.8em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  ">
     Football Overview
   </h2>
-  <p style="line-height: 1.8em; font-size: 1.15em;">
-    Football, also known as <span style="color:#f4d35e;font-weight:bold;text-shadow:1px 1px 3px #000;">soccer</span> in some regions, is the <span style="color:#e63946;font-weight:bold;text-shadow:1px 1px 3px #000;">world’s most beloved sport</span>. Played and watched by billions across the globe, it brings together players and fans with a single mission: to <span style="color:#f4d35e;text-shadow:1px 1px 2px #000;">score goals and celebrate teamwork</span>.
+  <p class="fade-in" style="line-height: 1.8em; font-size: 1.15em;">
+    Football, also known as <span class="glow">soccer</span> in some regions, is the <span class="glow">world’s most beloved sport</span>. Played and watched by billions across the globe, it brings together players and fans with a single mission: to <span class="glow">score goals and celebrate teamwork</span>.
     <br><br>
-    Each match features <span style="color:#e63946;font-weight:bold;text-shadow:1px 1px 2px #000;">two teams of eleven</span>, including a dedicated goalkeeper for each side. The game follows the <span style="color:#f4d35e;text-shadow:1px 1px 2px #000;">17 Laws of the Game</span>, maintained by IFAB and governed worldwide by FIFA.
+    Each match features <span class="glow">two teams of eleven</span>, including a dedicated goalkeeper for each side. The game follows the <span class="glow">17 Laws of the Game</span>, maintained by IFAB and governed worldwide by FIFA.
     <br><br>
-    Games are played on <span style="color:#e63946;text-shadow:1px 1px 2px #000;">rectangular fields</span> of grass or artificial turf, with goals at either end. A standard match consists of two <span style="color:#f4d35e;">45-minute halves</span>, plus extra time when necessary. Except for goalkeepers in their penalty area, players must rely solely on their feet, head, and body — no hands allowed!
+    Games are played on <span class="glow">rectangular fields</span> of grass or artificial turf, with goals at either end. A standard match consists of two <span class="glow">45-minute halves</span>, plus extra time when necessary. Except for goalkeepers in their penalty area, players must rely solely on their feet, head, and body — no hands allowed!
     <br><br>
-    Football is celebrated for its <span style="color:#f4d35e;font-weight:bold;text-shadow:1px 1px 2px #000;">creativity, rhythm, and unpredictability</span>. Iconic tournaments like the <span style="color:#e63946;">FIFA World Cup</span>, <span style="color:#f4d35e;">UEFA Champions League</span>, and <span style="color:#e63946;">Copa América</span> highlight the best talents the sport has to offer. From spontaneous street matches to packed stadium spectacles, football unites cultures and ignites <span style="color:#f4d35e;font-style:italic;text-shadow:1px 1px 2px #000;">passion like no other</span>.
+    Football is celebrated for its <span class="glow">creativity, rhythm, and unpredictability</span>. Iconic tournaments like the <span class="glow">FIFA World Cup</span>, <span class="glow">UEFA Champions League</span>, and <span class="glow">Copa América</span> highlight the best talents the sport has to offer. From spontaneous street matches to packed stadium spectacles, football unites cultures and ignites <span class="glow">passion like no other</span>.
   </p>
 </section>
+
+<style>
+  /* Glowing effect */
+  .glow {
+    color: #f4d35e;
+    font-weight: bold;
+    text-shadow: 0 0 5px #f4d35e, 0 0 10px #f4d35e, 0 0 20px #f4d35e, 0 0 30px #f4d35e;
+    animation: glowAnim 2s infinite alternate;
+  }
+
+  @keyframes glowAnim {
+    0% { text-shadow: 0 0 5px #f4d35e, 0 0 10px #f4d35e, 0 0 20px #f4d35e, 0 0 30px #f4d35e; }
+    100% { text-shadow: 0 0 10px #f4d35e, 0 0 20px #f4d35e, 0 0 30px #f4d35e, 0 0 40px #f4d35e; }
+  }
+
+  /* Fade-in effect */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
 
 
 </body>
